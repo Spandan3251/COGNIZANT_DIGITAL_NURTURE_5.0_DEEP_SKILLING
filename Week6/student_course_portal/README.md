@@ -51,3 +51,15 @@ Navigate into the project directory and install the required packages:
 ```bash
 cd student_course_portal
 npm install
+
+Step 2: Start the Mock REST API Server
+Launch json-server on port 3000 to feed course data to the frontend:
+
+```bash
+npx json-server --watch db.json --port 3000
+
+Step 3: Launch the Angular Development Server
+In a new terminal window, run:
+
+```bash
+ng serve
