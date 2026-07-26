@@ -1,59 +1,53 @@
-# StudentCoursePortal
+# 🎓 Student Course Portal
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.32.
+An interactive single-page application built using **Angular** and a **JSON-Server REST API** backend, developed as part of the **Cognizant Digital Nurture 5.0 Deep Skilling** curriculum.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🌟 Key Features
 
+* **Interactive Home Dashboard:** Displays live academic metrics including available courses, enrolled courses, and GPA tracking, alongside search functionality.
+* **Course Catalog:** View detailed listings for courses (Angular, ASP.NET Core, SQL Server) with credits, fees in INR, status badges (*Passed*, *Pending*, *Failed*), and expandable course details.
+* **Student Profile Routing:** Dedicated Angular routes to navigate seamlessly between Home, Courses, and Profile views.
+* **REST API Integration:** Connected to a mock backend API powered by `json-server` running on port 3000.
+
+---
+
+## 🖼️ Application Screenshots
+
+### 1. Home Dashboard
+![Home Dashboard](./screenshots/home.png)
+> *Home page showcasing quick stats counters, interactive search, and quick action buttons.*
+
+### 2. Available Courses Catalog
+![Available Courses](./screenshots/courses.png)
+> *Course catalog view featuring status indicators, credit hours, course fees, and detail toggles.*
+
+### 3. Student Profile View
+![Student Profile](./screenshots/profile.png)
+> *Dedicated component route for managing student profile information.*
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** Angular, TypeScript, HTML5, CSS3
+* **Backend API:** JSON-Server (`db.json`)
+* **Routing:** Angular Router
+* **Package Manager:** npm
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally on your machine:
+
+### Prerequisites
+* **Node.js** (v18 or higher recommended)
+* **Angular CLI** (`npm install -g @angular/cli`)
+
+### Step 1: Install Dependencies
+Navigate into the project directory and install the required packages:
 ```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+cd student_course_portal
+npm install
